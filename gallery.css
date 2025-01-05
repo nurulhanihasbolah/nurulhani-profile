@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: #E2DED3;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px 20px 0 20px;
+}
+
+.container .heading {
+    width: 50%;
+    padding-bottom: 50px;
+}
+
+.container .heading h3 {
+    font-size: 3em;
+    font-weight: bolder;
+    color: #492F25;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #492F25;
+}
+
+.container .heading span {
+    font-weight: 100; /* Changed from 150 to 100 */
+    color: #492F25;
+}
+
+.container .box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.container .box .dream {
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+    gap: 20px;
+}
+.container .box .dream img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 1rem #492F25;
+    overflow: hidden;
+}
+.container .box .dream video {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 1rem #492F25;
+    overflow: hidden;
+}
+
+.container .btn {
+    margin: 40px 0 70px 0;
+    background: #9A8B85;
+    padding: 15px 40px;
+    border-radius: 5px;
+}
+.container .btn a {
+    color: #492F25;
+    background-color: transparent;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+.container .btn:hover {
+    background: #492F25;
+}
+.container .btn a:hover {
+    background: #492F25;
+    color: white;
+}
+
+@media only screen and (max-width: 769px) {
+    .container .box {
+        flex-direction: column; /* Changed to column */
+    }
+    .container .box .dream {
+        width: 100%;
+    }
+    .container .box .dream img, .container .box .dream video {
+        padding-bottom: 15px;
+        border-radius: 5px;
+    }
+}
+
+@media only screen and (max-width: 643px) {
+    .container .heading {
+        width: 100%;
+    }
+    .container .heading h3 {
+        font-size: 1em;
+    }
+}
